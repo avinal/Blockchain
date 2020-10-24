@@ -1,0 +1,38 @@
+# Project exclude paths
+/.gradle/
+/Problems/30 years before and after/out/
+/Problems/30 years before and after/out/production/classes/
+/Problems/Add days and subtract hours/out/
+/Problems/Add days and subtract hours/out/production/classes/
+/Problems/Add 11 hours and print the date/out/
+/Problems/Add 11 hours and print the date/out/production/classes/
+/Problems/Calculator with four methods/out/
+/Problems/Calculator with four methods/out/production/classes/
+/Problems/Check for null/out/
+/Problems/Check for null/out/production/classes/
+/Problems/Concat positive numbers/out/
+/Problems/Concat positive numbers/out/production/classes/
+/Problems/Correct the usage of non-generic class/out/
+/Problems/Correct the usage of non-generic class/out/production/classes/
+/Problems/Create a full name/out/
+/Problems/Create a full name/out/production/classes/
+/Problems/Creating list/out/
+/Problems/Creating list/out/production/classes/
+/Problems/Find the nearest number/out/
+/Problems/Find the nearest number/out/production/classes/
+/Problems/Implementing the EntrySet method/out/
+/Problems/Implementing the EntrySet method/out/production/classes/
+/Problems/Initialize an object of a generic class/out/
+/Problems/Initialize an object of a generic class/out/production/classes/
+/Problems/Invert an array/out/
+/Problems/Invert an array/out/production/classes/
+/Problems/Output the list's elements/out/
+/Problems/Output the list's elements/out/production/classes/
+/Problems/Phone Book/out/
+/Problems/Phone Book/out/production/classes/
+/Problems/Rehashing/out/
+/Problems/Rehashing/out/production/classes/
+/Problems/The first element/out/
+/Problems/The first element/out/production/classes/
+/Problems/The passed hours since the beginning of year/out/
+/Problems/The passed hours since the beginning of year/out/production/classes/
