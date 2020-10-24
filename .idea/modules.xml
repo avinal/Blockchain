@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Blockchain/task/Blockchain.Blockchain-task.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Problems/30 years before and after/Blockchain.Problems-30_years_before_and_after.test.iml" />
