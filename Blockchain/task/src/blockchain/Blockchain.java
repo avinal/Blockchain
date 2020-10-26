@@ -5,22 +5,24 @@ import java.util.Date;
 import java.util.List;
 
 public class Blockchain {
-    private List<Block> blockChain;
+    private final List<Block> blockChain;
+    private final BlockMiner miner;
 
-    public Blockchain() {
+
+    public Blockchain(int hashZeros) {
         blockChain = new ArrayList<>();
+        miner = new BlockMiner(hashZeros);
     }
 
     public void addBlock() {
-        String dataString = "I am Avinal";
         if (blockChain.size() == 0) {
-            blockChain.add(new Block(dataString, "0", new Date().getTime(), 1));
-        } else {
-            dataString += blockChain.size();
-            blockChain.add(new Block(dataString,
-                    blockChain.get(blockChain.size() - 1).getHash(),
+            blockChain.add(miner.mine(new Block(0,
+                    "0", "0",
                     new Date().getTime(),
-                    blockChain.size() + 1));
+                    0,
+                    0)));
+        } else {
+            blockChain.add(miner.mine(blockChain.get(blockChain.size() - 1)));
         }
     }
 
@@ -29,4 +31,5 @@ public class Blockchain {
             block.printBlock();
         }
     }
+
 }

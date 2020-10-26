@@ -1,67 +1,49 @@
 package blockchain;
 
-import java.security.MessageDigest;
-
 public class Block {
-    private String hash;
-    private String previousHash;
-    private String data;
-    private long timeStamp;
-    private int Id;
+    private final String hash;
+    private final String previousHash;
+    private final long data;
+    private final long timeStamp;
+    private final int Id;
+    private final long generationTime;
 
-    public Block(String data, String previousHash, long timeStamp, int Id) {
+    public Block(long data, String previousHash, String hash, long timeStamp, int Id, long generationTime) {
         this.data = data;
         this.previousHash = previousHash;
+        this.hash = hash;
         this.timeStamp = timeStamp;
         this.Id = Id;
-        calculateHash();
+        this.generationTime = generationTime;
     }
 
-    private void calculateHash() {
-        try {
-            MessageDigest digest = MessageDigest.getInstance("SHA-256");
-
-            byte[] hash = digest.digest(data.getBytes("UTF-8"));
-            StringBuilder hexString = new StringBuilder();
-
-            for (byte elem : hash) {
-                String hex = Integer.toHexString(0xff & elem);
-                if (hex.length() == 1) {
-                    hexString.append('0');
-                }
-                hexString.append(hex);
-            }
-            this.hash = hexString.toString();
-
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
 
     public String getHash() {
         return hash;
     }
 
-    public String getData() {
+    public long getData() {
         return data;
-    }
-
-    public String getPreviousHash() {
-        return previousHash;
     }
 
     public long getTimeStamp() {
         return timeStamp;
     }
 
+    public int getId() {
+        return Id;
+    }
+
     public void printBlock() {
         System.out.println("Block:");
         System.out.println("Id: " + Id);
         System.out.println("Timestamp: " + timeStamp);
+        System.out.println("Magic number: " + data);
         System.out.println("Hash of the previous block:");
         System.out.println(previousHash);
         System.out.println("Hash of the block:");
         System.out.println(hash);
+        System.out.println("Block was generating for " + generationTime + " seconds");
         System.out.println();
     }
 }
